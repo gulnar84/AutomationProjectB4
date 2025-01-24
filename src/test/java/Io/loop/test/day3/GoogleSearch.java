@@ -14,8 +14,8 @@ public class GoogleSearch {
          * validate the url of the page, expected url is "https://www.google.com/"
          * close the browser
          */
-        // in selenium 3 we had to set up the driver, for that we need webdrivermanager libraries
-        // WebDriverManager.chromedriver().setup();
+        // in selenium 3 we had to set up the driver, for that we need Web driver manager libraries
+         //WebDriverManager.chromedriver().setup();
 
         // create driver object
         WebDriver driver = new ChromeDriver();
