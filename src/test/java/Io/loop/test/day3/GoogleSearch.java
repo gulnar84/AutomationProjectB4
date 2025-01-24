@@ -29,24 +29,24 @@ public class GoogleSearch {
 
 
 
-//        String expectedTitle = "Google";
-//        String actualTitle = driver.getTitle();
-//
-//        if(actualTitle.contains(expectedTitle)){
-//            System.out.println("Actual title: " + actualTitle + ", matches expected title: " + expectedTitle + ". => TEST PASS");
-//        } else {
-//            System.out.println("Actual title: " + actualTitle + ", DOES NOT match expected title: " + expectedTitle + ". => TEST FAIL");
-//        }
-//
-//        String expectedUrl = "https://www.google.com";
-//        String actualUrl = driver.getCurrentUrl();
-//
-//        if(actualUrl.contains(expectedUrl)){
-//            System.out.println("Actual url: " + actualUrl + ", matches expected url: " + expectedUrl + ". => TEST PASS");
-//        } else {
-//            System.err.println("Actual url: " + actualUrl + ", DOES NOT match expected url: " + expectedUrl + ". => TEST FAIL");
-//        }
-//
-//        driver.quit();
+        String expectedTitle = "Google";
+        String actualTitle = driver.getTitle();
+
+        if(actualTitle.contains(expectedTitle)){
+            System.out.println("Actual title: " + actualTitle + ", matches expected title: " + expectedTitle + ". => TEST PASS");
+        } else {
+            System.out.println("Actual title: " + actualTitle + ", DOES NOT match expected title: " + expectedTitle + ". => TEST FAIL");
+        }
+
+        String expectedUrl = "https://www.google.com";
+        String actualUrl = driver.getCurrentUrl();
+
+        if(actualUrl.contains(expectedUrl)){
+            System.out.println("Actual url: " + actualUrl + ", matches expected url: " + expectedUrl + ". => TEST PASS");
+        } else {
+            System.err.println("Actual url: " + actualUrl + ", DOES NOT match expected url: " + expectedUrl + ". => TEST FAIL");
+        }
+
+        driver.quit();
     }
 }
