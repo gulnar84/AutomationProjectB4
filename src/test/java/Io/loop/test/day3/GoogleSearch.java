@@ -46,7 +46,6 @@ public class GoogleSearch {
         } else {
             System.err.println("Actual url: " + actualUrl + ", DOES NOT match expected url: " + expectedUrl + ". => TEST FAIL");
         }
-
         driver.quit();
     }
 }
