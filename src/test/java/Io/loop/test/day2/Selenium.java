@@ -34,5 +34,6 @@ public class Selenium {
         driver.navigate().refresh();
         // quitting the browser
         driver.quit();
+
     }
 }
