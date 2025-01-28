@@ -22,6 +22,7 @@ public class Locators {
         WebElement searchBoxWithName = driver.findElement(By.name("q"));
         WebElement aboutLink = driver.findElement(By.linkText("About"));
 
+
         //aboutLink.click();
 
         String textToSearch = "Feyruz is a Java King";
