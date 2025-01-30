@@ -6,6 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class T1_locators_getText {
+    /*
+     * go to docuport
+     * enter username
+     * do NOT enter password
+     * click on login button
+     * verify error message - please enter password
+     */
     public static void main(String[] args) {
 
         WebDriver driver = WebDriverUtil.getDriver(DocuportConstants.BROWSER);

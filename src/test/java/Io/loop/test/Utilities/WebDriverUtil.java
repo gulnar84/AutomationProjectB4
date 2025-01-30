@@ -6,7 +6,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class WebDriverUtil {
-
+    /*
+     * create a static method getDriver
+     * Accepts argument String - browserType
+     * returns web driver
+     */
     /**
      * @param browserType
      * @return the driver of that browser
