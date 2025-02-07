@@ -9,6 +9,6 @@ public class T1_actions_hoverover {
      */
     @Test
     public void google_actions_hover(){
-        Driver.getDriver()
+        Driver.getDriver();
     }
 }
