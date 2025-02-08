@@ -41,7 +41,7 @@ Use all Select options. (visible text, value, index)
     @Test
     public void colorText () {
         Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='oldSelectMenu']")));
-        dropdown.selectByIndex(3);
+        dropdown.selectByIndex(3); //inspectde bax 3cudur yellow
         Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), "Yellow", "Actual does not match with Expected");
 
         dropdown.selectByValue("red");

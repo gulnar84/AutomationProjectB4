@@ -96,6 +96,8 @@ public class T5_multi_dropdown {
         } catch (Exception e){
             System.out.println("No options selected");
         }
+        Assert.assertThrows(org.openqa.selenium.NoSuchElementException.class, dropdown::getFirstSelectedOption);
+        Assert.assertTrue(dropdown.getAllSelectedOptions().isEmpty(),"The list is not empty"); // other way
 
     }
 }
