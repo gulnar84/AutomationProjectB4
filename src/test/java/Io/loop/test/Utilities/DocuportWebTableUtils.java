@@ -32,7 +32,7 @@ public class DocuportWebTableUtils {
                 element=driver.findElement(By.xpath(xpath));
                 break;
 
-                default: throws new InterruptedException("There is not suc a field:" + field);
+                //default: throws new InterruptedException("There is not suc a field:" + field);
 
             case "phone number" :
                 xpath="//td[2][text()=' " +emailAdress +"']/following-sibling::td[3]/span";

@@ -23,7 +23,7 @@ public class T1_findElements {
 
         //Thread.sleep(5000);   it will wait all 5 seconds
 
-        //  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // old selenium before selenium 4
+        //  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // old selenium before selenium 4//thhread sleep evezine same thred sleep
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // new selenium
 
         List<WebElement> nbaLinks = driver.findElements(By.tagName("a"));
