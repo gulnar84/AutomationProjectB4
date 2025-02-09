@@ -2,8 +2,7 @@ package Io.loop.test.Utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class
-ConfigurationReader {
+public class ConfigurationReader {
 
     private static Properties properties;
 

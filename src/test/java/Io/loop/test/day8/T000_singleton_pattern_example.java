@@ -3,7 +3,9 @@ package Io.loop.test.day8;
 public class T000_singleton_pattern_example {
    // private constructor to prevent external instantiation
     private T000_singleton_pattern_example(){}
+/*
 
+ */
     private static String word;
        // public getter
     public static String getword(){
