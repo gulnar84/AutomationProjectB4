@@ -3,7 +3,7 @@ package Io.loop.test.day10;
 import Io.loop.pages.LoopPracticeDynamicLoading1;
 import Io.loop.test.Utilities.BrowserUtils;
 import Io.loop.test.Utilities.ConfigurationReader;
-import Io.loop.test.Utilities.Driver;
+//import Io.loop.test.Utilities.Driver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -28,12 +28,12 @@ public class T1_dynamic_loading1 {
     @BeforeMethod
     public void setUpMethod(){
         loopPracticeDynamicLoading1 = new LoopPracticeDynamicLoading1();
-        Driver.getDriver().get(ConfigurationReader.getProperties("loop.practice"));
+        //Driver.getDriver().get(ConfigurationReader.getProperties("loop.practice"));
     }
 
     @AfterMethod
     public void tearDownMethod(){
-        Driver.closeDriver();
+        //Driver.closeDriver();
     }
 
     @Test
