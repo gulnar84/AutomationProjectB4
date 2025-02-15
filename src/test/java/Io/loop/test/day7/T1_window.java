@@ -23,7 +23,7 @@ public class T1_window extends TestBase {
      */
 
     @Test
-    public void test_window_handle(){
+    public void test_window_handle() {
         driver.get("http://the-internet.herokuapp.com/windows");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         assertEquals(driver.getTitle(), "The Internet", "Actual does not match expected");
@@ -35,15 +35,23 @@ public class T1_window extends TestBase {
 
         System.out.println("driver.getTitle() = " + driver.getTitle());
 
+
         //get orginal windowhandle
-        String orginalWindow= driver.getWindowHandle();
+        String orginalWindow = driver.getWindowHandle();
 
         // get all window handles
-        Set <String> windowHandles= driver.getWindowHandles();
+        Set<String> windowHandles = driver.getWindowHandles();
 
         // loop through and stay at the last window
-        for (String each :windowHandles);
-        System.out.println("each");
+        for (String each : windowHandles) {
+            System.out.println("each window handle:" + each);
+            driver.switchTo().window(each);
+        }
 
-}
+        System.out.println("driver.getTitle() = " + driver.getTitle());
+
+        //switch to original window
+        driver.switchTo().window(orginalWindow);
+        System.out.println("driver.getTitle() = " + driver.getTitle());
+    }
 }

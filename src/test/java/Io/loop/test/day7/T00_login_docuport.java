@@ -8,9 +8,25 @@ import org.testng.annotations.Test;
 public class T00_login_docuport extends TestBase {
 
     @Test
-    public void test_login_docuport () throws InterruptedException {
+    public void test_login_logout_docuport () throws InterruptedException {
         DocuportUtils.login(driver, DocuportConstants.CLIENT);
-        //DocuportUtils.logout(driver);
+        DocuportUtils.logOut(driver);
+
+        Thread.sleep(3000);
+
+        DocuportUtils.login(driver, DocuportConstants.EMPLOYEE);
+        DocuportUtils.logOut(driver);
+
+        Thread.sleep(3000);
+
+        DocuportUtils.login(driver, DocuportConstants.ADVISOR);
+        DocuportUtils.logOut(driver);
+
+        Thread.sleep(3000);
+
+        DocuportUtils.login(driver, DocuportConstants.SUPERVISOR);
+        DocuportUtils.logOut(driver);
+
 
     }
 }

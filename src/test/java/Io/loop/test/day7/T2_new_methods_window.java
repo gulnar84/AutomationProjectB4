@@ -12,6 +12,7 @@ public class T2_new_methods_window extends TestBase {
 
     @Test
     public void test_new_methods() {
+        driver.get("https://www.google.com");
 
         // open a new tab
         driver.switchTo().newWindow(WindowType.TAB);

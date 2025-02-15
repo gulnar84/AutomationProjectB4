@@ -1,5 +1,6 @@
 package Io.loop.test.day7;
 
+import Io.loop.test.Utilities.BrowserUtils;
 import Io.loop.test.base.TestBase;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
@@ -34,10 +35,12 @@ public class T3_window_titlies extends TestBase {
         Set <String> windowHandles = driver.getWindowHandles();
         for (String window : windowHandles) {
             driver.switchTo().window(window);
-            if (driver.getTitle().contains("Google")){
+            if (driver.getTitle().contains("Google")){ // axirinci facebook aciloirdi deye biz istedik qayidaq 1ciye google windowya
                 break;
             }
         }
+        //BrowserUtils.switchWindowAndValidate(driver,"loopcamp.io","Loopcamp");
+        BrowserUtils.switchToWindow(driver,"Google");
 
     }
 }
