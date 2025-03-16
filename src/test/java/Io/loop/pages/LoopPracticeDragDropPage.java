@@ -1,7 +1,6 @@
 package Io.loop.pages;
 
 import Io.loop.test.Utilities.Driver;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,4 +16,4 @@ public class LoopPracticeDragDropPage {
 
     @FindBy (id ="droptarget")
     public WebElement bigCircle;
-    }
+}

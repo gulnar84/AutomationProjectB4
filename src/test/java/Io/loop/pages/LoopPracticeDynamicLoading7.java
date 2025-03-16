@@ -1,15 +1,12 @@
 package Io.loop.pages;
 import Io.loop.test.Utilities.Driver;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoopPracticeDynamicLoading7 {
 
-    public LoopPracticeDynamicLoading7(){
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+    public LoopPracticeDynamicLoading7(){ PageFactory.initElements(Driver.getDriver(), this);}
 
     @FindBy(id = "alert")
     public WebElement doneMessage;
@@ -21,4 +18,5 @@ public class LoopPracticeDynamicLoading7 {
     public WebElement getDynamicLoading7;
 
 }
+
 

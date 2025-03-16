@@ -13,6 +13,7 @@ import java.time.Duration;
 import static org.testng.Assert.assertEquals;
 
 public class T4_webTables extends TestBase {
+
     /*
     1. login as an advisor
     2. go to users
@@ -22,21 +23,21 @@ public class T4_webTables extends TestBase {
     6. validate that role for alex.de.souza@gmail.com is client
     7. validate that advisor for alex.de.souza@gmail.com is  Batch1 Group1
      */
-    @Test
-    public void test_webTables() throws InterruptedException{
 
+    @Test
+    public void test_webTables() throws InterruptedException {
         DocuportUtils.login(driver, DocuportConstants.ADVISOR);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement user=driver.findElement(By.xpath("//span[contains(text(),'Users')]"));
+
+        WebElement user = driver.findElement(By.xpath("//span[contains(text(),'Users')]"));
         user.click();
-        String expectedFullName="Alex De Souza";
-        String actualFullName= DocuportWebTableUtils.returnAnyField(driver, "alex.de.souza@gmail.com"," Full name");
 
-        assertEquals(actualFullName,expectedFullName,"Actual does not match expected");
-        System.out.println("actual full name"+actualFullName);
+        String expectedFullName = "Alex De Souza";
+        String actualFullName = DocuportWebTableUtils.returnAnyField(driver, "alex.de.souza@gmail.com", "Full name");
+        assertEquals(actualFullName, expectedFullName, "Actual does not match expected");
 
-
+        System.out.println("actualFullName = " + actualFullName);
     }
 
-
 }
+

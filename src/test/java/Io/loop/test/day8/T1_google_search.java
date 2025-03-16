@@ -32,7 +32,7 @@ import static org.testng.Assert.assertEquals;
 
         @Test
         public void docuport_search() throws InterruptedException {
-            Driver.getDriver().get(ConfigurationReader.getProperties("docuportBETA"));
+            Driver.getDriver().get(ConfigurationReader.getProperties("docuportBeta"));
             System.out.println("((RemoteWebDriver) Driver.getDriver()).getSessionId() = " + ((RemoteWebDriver) Driver.getDriver()).getSessionId());
 
             DocuportUtils.login(Driver.getDriver(), "advisor");

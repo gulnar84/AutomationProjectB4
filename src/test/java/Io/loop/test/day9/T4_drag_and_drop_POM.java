@@ -37,7 +37,6 @@ public class T4_drag_and_drop_POM {
     5. validate “Try again!” text appears on big circle
      */
 
-
     LoopPracticeDragDropPage loopPracticeDragDropPage;
     Actions actions;
 
@@ -89,8 +88,8 @@ public class T4_drag_and_drop_POM {
                 .perform();
         assertEquals(loopPracticeDragDropPage.bigCircle.getText(), "Try again!");
     }
-    }
 
 
+}
 
 
